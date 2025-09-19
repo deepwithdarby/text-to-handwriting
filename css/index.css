@@ -24,6 +24,7 @@ body {
 }
 body.dark {
   --background-primary: #121212;
+  background-image: radial-gradient(at top left, #2c3e50, #4ca1af);
   --font-color-primary: #ccc;
   --elevation-background: #1d1d1d;
   --link-color: #09f;
@@ -45,6 +46,8 @@ body.dark {
 }
 body {
   background-color: var(--background-primary);
+  background-image: radial-gradient(at top left, #a0dea0, #f8f8b8);
+  background-attachment: fixed;
   color: var(--font-color-primary);
   padding: 100px 100px;
   font-size: 1.05rem;
@@ -387,9 +390,13 @@ body.dark .github-corner {
 
 fieldset {
   padding: 17px 20px;
-  border-radius: 5px;
-  border: 1px solid var(--field-borders);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin-top: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 legend {
